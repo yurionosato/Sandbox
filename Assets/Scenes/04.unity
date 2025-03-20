@@ -4177,6 +4177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 2122315251}
+  lookatObj: {fileID: 582816813}
   playerCamera: {fileID: 2122315250}
   autoTime: 5
 --- !u!114 &1862158946

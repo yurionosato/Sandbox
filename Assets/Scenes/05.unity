@@ -2335,6 +2335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 2122315251}
+  lookatObj: {fileID: 6147699220285680380}
   playerCamera: {fileID: 2122315250}
   autoTime: 5
 --- !u!114 &1853693506
@@ -2662,6 +2663,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e929a04b0c5440a6b9b5264c9113416, type: 3}
+--- !u!1 &6147699220285680380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6147699218519798952, guid: 7e929a04b0c5440a6b9b5264c9113416, type: 3}
+  m_PrefabInstance: {fileID: 6147699220285680379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ using UnityEngine;
 public class autoWalking : MonoBehaviour
 {
     [SerializeField] private GameObject go;
+    [SerializeField] private GameObject lookatObj;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float autoTime = 10f;
     float timer;
@@ -29,26 +30,7 @@ public class autoWalking : MonoBehaviour
     void Update()
     {
         checkControl();
-        if(auto)
-        {
-            if (timer < randomTime)
-            {
-                go.transform.Translate(randomX, 0, randomZ);
-                yaw = go.transform.localEulerAngles.y - randomRL;
-                pitch -= - randomUD;
-                pitch = Mathf.Clamp(pitch, -50f, 50f);
-                go.transform.localEulerAngles = new Vector3(0, yaw, 0);
-                //playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
-            }
-            else
-            {
-                setRandom();
-            }
-        }
-        else
-        {
-            initRandom();
-        }
+        autoMove();
     }
 
     void checkControl()
@@ -75,6 +57,34 @@ public class autoWalking : MonoBehaviour
         else
         {
             auto = false;
+        }
+    }
+
+    void autoMove()
+    {
+        if (auto)
+        {
+            if (timer < randomTime)
+            {
+                go.transform.Translate(randomX, 0, randomZ);
+                yaw = go.transform.localEulerAngles.y - randomRL;
+                pitch -= -randomUD;
+                pitch = Mathf.Clamp(pitch, -50f, 50f);
+                //go.transform.localEulerAngles = new Vector3(0, yaw, 0);
+                if(lookatObj != null)
+                {
+                    go.transform.LookAt(lookatObj.transform, Vector3.up);
+                }
+                //playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
+            }
+            else
+            {
+                setRandom();
+            }
+        }
+        else
+        {
+            initRandom();
         }
     }
 
