@@ -1,3 +1,4 @@
+using Oculus.Interaction.Samples;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -73,7 +74,11 @@ public class autoWalking : MonoBehaviour
                 //go.transform.localEulerAngles = new Vector3(0, yaw, 0);
                 if(lookatObj != null)
                 {
-                    go.transform.LookAt(lookatObj.transform, Vector3.up);
+                    var direction = lookatObj.transform.position - go.transform.position;
+                    direction.y = 0;
+                    var lookRotation = Quaternion.LookRotation(direction, Vector3.up);
+                    go.transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, 0.5f);
+                    //go.transform.LookAt(lookatObj.transform, Vector3.up);
                 }
                 //playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
             }
@@ -91,8 +96,8 @@ public class autoWalking : MonoBehaviour
     void setRandom()
     {
         randomTime = timer + UnityEngine.Random.Range(2f, 5f);
-        randomX = UnityEngine.Random.Range(-1f, 1f) / 30;
-        randomZ = UnityEngine.Random.Range(-1f, 1f) / 30;
+        randomX = UnityEngine.Random.Range(-1f, 1f) / 10;
+        randomZ = UnityEngine.Random.Range(-1f, 1f) / 10;
         randomUD = UnityEngine.Random.Range(-1f, 1f) / 10;
         randomRL = UnityEngine.Random.Range(-1f, 1f) / 10;
     }
