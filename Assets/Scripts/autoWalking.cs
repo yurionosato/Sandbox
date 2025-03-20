@@ -2,6 +2,7 @@ using Oculus.Interaction.Samples;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 //using static UnityEngine.InputManagerEntry;
 
@@ -11,6 +12,11 @@ public class autoWalking : MonoBehaviour
     [SerializeField] private GameObject lookatObj;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float autoTime = 10f;
+    [SerializeField] private float moveSpeed = 0.05f;
+    [SerializeField] private float limitXL;
+    [SerializeField] private float limitXR;
+    [SerializeField] private float limitZU;
+    [SerializeField] private float limitZD;
     float timer;
     bool auto = false;
     float randomTime = 0;
@@ -18,8 +24,6 @@ public class autoWalking : MonoBehaviour
     float randomZ = 0;
     float randomUD = 0;
     float randomRL = 0;
-    float yaw;
-    float pitch;
 
     // Start is called before the first frame update
     void Start()
@@ -67,20 +71,15 @@ public class autoWalking : MonoBehaviour
         {
             if (timer < randomTime)
             {
-                go.transform.Translate(randomX, 0, randomZ);
-                yaw = go.transform.localEulerAngles.y - randomRL;
-                pitch -= -randomUD;
-                pitch = Mathf.Clamp(pitch, -50f, 50f);
-                //go.transform.localEulerAngles = new Vector3(0, yaw, 0);
-                if(lookatObj != null)
+                //go.transform.Translate(randomX, 0, randomZ);
+                go.transform.position = Vector3.MoveTowards(go.transform.position, new Vector3(randomRL, go.transform.position.y, randomUD), moveSpeed);
+                if (lookatObj != null)
                 {
                     var direction = lookatObj.transform.position - go.transform.position;
                     direction.y = 0;
                     var lookRotation = Quaternion.LookRotation(direction, Vector3.up);
                     go.transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, 0.5f);
-                    //go.transform.LookAt(lookatObj.transform, Vector3.up);
                 }
-                //playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
             }
             else
             {
@@ -96,10 +95,10 @@ public class autoWalking : MonoBehaviour
     void setRandom()
     {
         randomTime = timer + UnityEngine.Random.Range(2f, 5f);
+        randomRL = UnityEngine.Random.Range(limitXL, limitXR);
+        randomUD = UnityEngine.Random.Range(limitZU, limitZD);
         randomX = UnityEngine.Random.Range(-1f, 1f) / 10;
         randomZ = UnityEngine.Random.Range(-1f, 1f) / 10;
-        randomUD = UnityEngine.Random.Range(-1f, 1f) / 10;
-        randomRL = UnityEngine.Random.Range(-1f, 1f) / 10;
     }
 
     void initRandom()
