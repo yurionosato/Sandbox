@@ -2338,6 +2338,11 @@ MonoBehaviour:
   lookatObj: {fileID: 6147699220285680380}
   playerCamera: {fileID: 2122315250}
   autoTime: 5
+  moveSpeed: 0.01
+  limitXL: -20
+  limitXR: 20
+  limitZU: -30
+  limitZD: -40
 --- !u!114 &1853693506
 MonoBehaviour:
   m_ObjectHideFlags: 0
