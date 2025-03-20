@@ -1094,11 +1094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: maxSwitchTime
-      value: 10
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: minSwitchTime
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: sceneNames.Array.size
@@ -4184,7 +4184,7 @@ MonoBehaviour:
   lookatObj: {fileID: 582816813}
   playerCamera: {fileID: 2122315250}
   autoTime: 5
-  moveSpeed: 0.01
+  moveSpeed: 0.005
   limitXL: -20
   limitXR: 20
   limitZU: -30

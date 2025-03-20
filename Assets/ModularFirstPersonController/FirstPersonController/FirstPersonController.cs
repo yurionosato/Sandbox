@@ -210,8 +210,8 @@ public class FirstPersonController : MonoBehaviour
         // Control camera movement
         if(cameraCanMove)
         {
-            JoyH = Input.GetAxis("JoyRightH") / 2;
-            JoyV = Input.GetAxis("JoyRightV") / 5;
+            JoyH = Input.GetAxis("JoyRightH") / 50;
+            JoyV = Input.GetAxis("JoyRightV") / 50;
             //yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
             yaw = transform.localEulerAngles.y - JoyH * mouseSensitivity;
 
