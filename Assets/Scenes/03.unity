@@ -176,11 +176,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: maxSwitchTime
-      value: 90
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: minSwitchTime
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266762, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: m_Name
@@ -11298,6 +11298,10 @@ PrefabInstance:
       value: nikuRoot
       objectReference: {fileID: 0}
     - target: {fileID: 1088323813583512283, guid: 327331eeaf7db4e83bfbc4caf7ba3062, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088323814077799978, guid: 327331eeaf7db4e83bfbc4caf7ba3062, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

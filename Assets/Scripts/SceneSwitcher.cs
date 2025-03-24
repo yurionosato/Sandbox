@@ -13,6 +13,7 @@ public class SceneSwitcher : MonoBehaviour
     // トリガーに衝突したときに呼ばれるメソッド
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("------------------!!!");
         // プレイヤーが接触したときのみシーンをランダムで切り替える
         if (other.CompareTag("Player"))
         {
