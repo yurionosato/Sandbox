@@ -6,23 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/01.unity
-    guid: 7acd32c5a367a4d43bd3c8d7315eb838
+    path: Assets/Scenes/VRScene/VR01.unity
+    guid: 04341a9e2babb9142ab69b925ec0ad3d
   - enabled: 1
-    path: Assets/Scenes/02.unity
-    guid: 045c756d3a7224f689c6d3c52cd8e10b
+    path: Assets/Scenes/VRScene/VR02.unity
+    guid: 6df498613826b8443b1e6df58729d5f6
   - enabled: 1
-    path: Assets/Scenes/03.unity
-    guid: 87a38fe15958d41d29ebfbe245e35d75
+    path: Assets/Scenes/VRScene/VR03.unity
+    guid: d0f3235df5e1fd4439f2da9be0aee367
   - enabled: 1
-    path: Assets/Scenes/04.unity
-    guid: 1449135d9526c446aa070afb46dcdd41
+    path: Assets/Scenes/VRScene/VR04.unity
+    guid: 141fb7703e56b6f4ba8ba5a054330679
   - enabled: 1
-    path: Assets/Scenes/05.unity
-    guid: 6db23828574f44cc5949b0deb90d365c
+    path: Assets/Scenes/VRScene/VR05.unity
+    guid: 23d9b429db15abe4695f11ee81199bdf
   - enabled: 1
-    path: Assets/Scenes/06.unity
-    guid: 06230a375ee614d2093ad18e2ead28e2
+    path: Assets/Scenes/VRScene/VR06.unity
+    guid: 44cadbb807f6a534789e606b8c484fd0
+  - enabled: 1
+    path: Assets/Scenes/VRScene/VR07.unity
+    guid: f18ec80d0cf260e449ea3247b906a1af
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4e04a050dacb8e14383035c6e4306b39, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 04e97f054c0373b4c933690e80391ea0, type: 2}
