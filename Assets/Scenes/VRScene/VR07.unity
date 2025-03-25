@@ -582,7 +582,6 @@ GameObject:
   - component: {fileID: 473061361}
   - component: {fileID: 473061360}
   - component: {fileID: 473061359}
-  - component: {fileID: 473061363}
   - component: {fileID: 473061362}
   m_Layer: 0
   m_Name: "pen_0108-\u306E\u30B3\u30D4\u30FC_0000_01_0000_pen_0108-_0017_18"
@@ -700,21 +699,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 12.47, y: 8.81, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &473061363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473061358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fddd0e7f1ad9478a9455b3a6e314d12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneNames:
-  - VR01
-  targetSceneIndex: 0
 --- !u!1 &484790237
 GameObject:
   m_ObjectHideFlags: 0

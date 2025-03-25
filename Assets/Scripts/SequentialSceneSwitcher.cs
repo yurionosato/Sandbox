@@ -61,7 +61,7 @@ public class SequentialSceneSwitcher : MonoBehaviour
         string nextScene = sceneNames[currentIndex];
 
         // シーンを切り替える
-        if(SceneManager.GetActiveScene().name == "VR07")
+        if(nextScene == "VR01")
         {
             endingManager.gotoEnding = true;
         }

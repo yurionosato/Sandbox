@@ -29,7 +29,7 @@ public class endingManager : MonoBehaviour
             {
                 panel.GetComponent<Image>().color = new Color(0, 0, 0, (timer - n) / endTime);
             }
-            if(timer > n+endTime)
+            if(timer > n+endTime+100)
             {
             #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
