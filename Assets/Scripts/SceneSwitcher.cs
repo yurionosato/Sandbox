@@ -18,8 +18,8 @@ public class SceneSwitcher : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // シーン名の配列からランダムに選択
-            int randomIndex = Random.Range(0, sceneNames.Length);
-            string selectedScene = sceneNames[randomIndex];
+            //int randomIndex = Random.Range(0, sceneNames.Length);
+            string selectedScene = sceneNames[0];
 
             // 選択したシーンをロード
             SceneManager.LoadScene(selectedScene);

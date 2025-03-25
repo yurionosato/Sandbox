@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNames:
-  - 05
+  - VR05
   targetSceneIndex: 0
 --- !u!65 &181168958
 BoxCollider:
@@ -1259,11 +1259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: maxSwitchTime
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: minSwitchTime
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2077815020733266761, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: sceneNames.Array.size
@@ -2282,6 +2282,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
