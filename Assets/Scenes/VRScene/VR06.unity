@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 66402683}
   - component: {fileID: 66402682}
+  - component: {fileID: 66402684}
   m_Layer: 0
   m_Name: geisai (1)
   m_TagString: Untagged
@@ -206,6 +207,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &66402684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66402681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
+--- !u!1 &77141374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+  m_PrefabInstance: {fileID: 793387885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &157230522
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157230524}
   - component: {fileID: 157230523}
+  - component: {fileID: 157230525}
   m_Layer: 0
   m_Name: geisai02
   m_TagString: Untagged
@@ -290,6 +310,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157230525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157230522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1 &195180799
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +566,7 @@ GameObject:
   - component: {fileID: 458803559}
   - component: {fileID: 458803558}
   - component: {fileID: 458803557}
+  - component: {fileID: 458803560}
   m_Layer: 0
   m_Name: PNG_0001
   m_TagString: Untagged
@@ -628,6 +662,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &458803560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458803556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1 &471753648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0480e73cd4e844bf15d05f5401f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _preset: {fileID: 11400000, guid: dbcc855b8aae0cf42a6463e7f1323ddb, type: 2}
+  _preset: {fileID: 11400000, guid: d55569ed946ad234b9d65877c79c824f, type: 2}
   _camera: {fileID: 0}
   customAspectRatio: 0
   _aspectRatio: {x: 4, y: 3}
@@ -1930,6 +1977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999578901}
   - component: {fileID: 999578900}
+  - component: {fileID: 999578902}
   m_Layer: 0
   m_Name: geisai02 (1)
   m_TagString: Untagged
@@ -2004,6 +2052,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999578902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999578899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1 &1042644068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,6 +2238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117318310}
   - component: {fileID: 1117318309}
+  - component: {fileID: 1117318311}
   m_Layer: 0
   m_Name: geisai02 (2)
   m_TagString: Untagged
@@ -2251,6 +2313,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117318311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117318308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1 &1147150802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,6 +2855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1420656560}
   - component: {fileID: 1420656559}
+  - component: {fileID: 1420656561}
   m_Layer: 0
   m_Name: geisai
   m_TagString: Untagged
@@ -2854,6 +2930,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1420656561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420656558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1 &1428532800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,6 +3625,7 @@ GameObject:
   - component: {fileID: 2127948651}
   - component: {fileID: 2127948654}
   - component: {fileID: 2127948653}
+  - component: {fileID: 2127948655}
   m_Layer: 0
   m_Name: geisai (2)
   m_TagString: Untagged
@@ -3646,6 +3736,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.6399994, y: 8.429999, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2127948655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127948650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059447099dad48e4d83f0655e89d1ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookatObj: {fileID: 77141374}
 --- !u!1001 &2132958242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3814,6 +3917,10 @@ PrefabInstance:
     - target: {fileID: 2077815020733266762, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
       propertyPath: m_Name
       value: SceneSwitcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077815020733266762, guid: 159bf2141dc584e7fb7ca54199d1c311, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

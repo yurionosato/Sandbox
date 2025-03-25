@@ -101,7 +101,7 @@ public class OLDTVFilter3 : MonoBehaviour {
         ExecuteFilter(_preset.televisionFilter);                // television filter
         ExecuteFilter(_preset.tubeFilter);                      // tube filter
 
-        Graphics.CopyTexture( source, destination );
+        //Graphics.CopyTexture( source, destination );
         Graphics.Blit( PostProcessingProfile.SOURCEBUFFER, destination );
 
     }

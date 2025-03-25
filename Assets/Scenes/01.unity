@@ -3308,6 +3308,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1135811990057798735, guid: 15289cab2047847829e618cc9f3eab3d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4007472149719112239, guid: 15289cab2047847829e618cc9f3eab3d, type: 3}
       propertyPath: m_HDR
       value: 0

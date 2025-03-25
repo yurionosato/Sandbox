@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0480e73cd4e844bf15d05f5401f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _preset: {fileID: 11400000, guid: dbcc855b8aae0cf42a6463e7f1323ddb, type: 2}
+  _preset: {fileID: 11400000, guid: d55569ed946ad234b9d65877c79c824f, type: 2}
   _camera: {fileID: 0}
   customAspectRatio: 0
   _aspectRatio: {x: 4, y: 3}

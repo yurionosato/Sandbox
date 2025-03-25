@@ -210,21 +210,21 @@ public class FirstPersonController : MonoBehaviour
         // Control camera movement
         if(cameraCanMove)
         {
-            JoyH = Input.GetAxis("JoyRightH") / 50;
-            JoyV = Input.GetAxis("JoyRightV") / 50;
-            //yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
-            yaw = transform.localEulerAngles.y - JoyH * mouseSensitivity;
+            //JoyH = Input.GetAxis("JoyRightH") / 50;
+            //JoyV = Input.GetAxis("JoyRightV") / 50;
+            yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
+            //yaw = transform.localEulerAngles.y - JoyH * mouseSensitivity;
 
             if (!invertCamera)
             {
-                //pitch -= mouseSensitivity * Input.GetAxis("Mouse Y");
-                pitch -= mouseSensitivity * JoyV;
+                pitch -= mouseSensitivity * Input.GetAxis("Mouse Y");
+                //pitch -= mouseSensitivity * JoyV;
             }
             else
             {
                 // Inverted Y
-                //pitch += mouseSensitivity * Input.GetAxis("Mouse Y");
-                pitch += mouseSensitivity * JoyV;
+                pitch += mouseSensitivity * Input.GetAxis("Mouse Y");
+                //pitch += mouseSensitivity * JoyV;
             }
 
             // Clamp pitch between lookAngle
