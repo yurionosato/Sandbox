@@ -22,6 +22,10 @@ public class SceneSwitcher : MonoBehaviour
             string selectedScene = sceneNames[0];
 
             // 選択したシーンをロード
+            if (SceneManager.GetActiveScene().name == "VR07")
+            {
+                endingManager.gotoEnding = true;
+            }
             SceneManager.LoadScene(selectedScene);
         }
     }
